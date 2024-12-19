@@ -15,7 +15,8 @@ frontend/
 │   ├── services/       # API calls using Axios
 │   ├── styles/         # CSS/SASS stylesheets
 │   ├── assets/         # Images and other static resources
-│   └── App.jsx         # Main application component
+│   ├── App.jsx         # Main application component
+│   └── main.jsx        # Entry point for the application
 ├── package.json        # Project dependencies and scripts
 ├── vite.config.js      # Vite configuration
 └── README.md           # Frontend project information
