@@ -31,11 +31,15 @@ The backend runs on:
 ```
 backend/
 ├── src/
-│   ├── routes/     # API routes
-│   └── app.js      # Main server file
-├── package.json    # Backend dependencies
+│   ├── routes/      # API routes
+│   ├── models/      # Database models
+│   ├── middleware/  # Middleware functions
+│   ├── config/      # Configuration files
+│   ├── utils/       # Utility functions
+│   └── app.js       # Main server file
+├── package.json     # Backend dependencies
 ├── package-lock.json
-└── README.md       # Backend documentation
+└── README.md        # Backend documentation
 ```
 
 ## Dependencies
