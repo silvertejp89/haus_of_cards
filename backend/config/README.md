@@ -1,78 +1,78 @@
 # MySQL Docker Container - Projectarium
 
-## Syfte
+## Purpose
 
-Vi använder Docker för att skapa en isolerad MySQL-miljö för projektet **Haus of Cards**. Containern gör det enkelt att starta och dela databasen mellan teammedlemmar, och den kan återanvändas för framtida projekt i **Projectarium**.
+We use Docker to create an isolated MySQL environment for the **Haus of Cards** project. The container makes it easy to start and share the database among team members, and it can be reused for future projects within **Projectarium**.
 
 ---
 
-## Instruktioner för att köra containern
+## Instructions for Running the Container
 
-### Containerinställningar
+### Container Settings
 
 - **Container Name:** `projectarium-db`
-- **Portinställningar:**
-  - **Host-port:** `3307`
-  - **Container-port:** `3306`
-- **Miljövariabler:**
+- **Port Settings:**
+  - **Host Port:** `3307`
+  - **Container Port:** `3306`
+- **Environment Variables:**
   - `MYSQL_ROOT_PASSWORD=my-secret-pw`
   - `MYSQL_DATABASE=haus_of_cards`
 
 ---
 
-### Hur man använder containern
+## How to Use the Container
 
-#### Starta containern
+### Starting the Container
 
-1. Öppna Docker Desktop.
-2. Hitta containern `projectarium-db` i fliken **Containers**.
-3. Klicka på **Start** för att köra den.
+1. Open Docker Desktop.
+2. Find the container `projectarium-db` in the **Containers** tab.
+3. Click **Start** to run the container.
 
-#### Anslut till databasen
+### Connecting to the Database
 
-Använd dessa inställningar för att ansluta till MySQL:
+Use the following settings to connect to MySQL:
 
 - **Host:** `localhost`
 - **Port:** `3307`
 - **Username:** `root`
 - **Password:** `my-secret-pw`
-- **Databas:** `haus_of_cards`
+- **Database:** `haus_of_cards`
 
 ---
 
-## Vanliga kommandon för Docker
+## Common Docker Commands
 
-För terminalanvändare kan du också använda följande kommandon:
+For terminal users, you can also use the following commands:
 
-- **Starta containern:**
+- **Start the container:**
   ```bash
   docker start projectarium-db
   ```
-- **Stoppa containern:**
+- **Stop the container:**
   ```bash
   docker stop projectarium-db
   ```
-- **Kontrollera att containern körs:**
+- **Check if the container is running:**
   ```bash
   docker ps
   ```
 
 ---
 
-## Felsökning
+## Troubleshooting
 
-### Om `3307` är upptagen
+### If `3307` is occupied
 
-1. Stäng tjänsten som använder port `3307`, eller
-2. Använd en annan host-port (t.ex. `3308`) och uppdatera inställningarna.
+1. Stop the service using port `3307`, or
+2. Use a different host port (e.g., `3308`) and update the settings.
 
-### Om containern inte körs
+### If the container doesn’t run
 
-1. Kontrollera loggarna i Docker Desktop.
-2. Kontrollera att du har en fungerande Docker-installation.
+1. Check the logs in Docker Desktop.
+2. Verify that you have a functional Docker installation.
 
 ---
 
-## Kontakt
+## Contact
 
-Om du stöter på problem, kontakta [teamlead eller tekniskt ansvarig] för hjälp.
+If you encounter issues, contact the [team lead or technical manager] for assistance.
