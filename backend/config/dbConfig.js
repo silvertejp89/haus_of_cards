@@ -1,10 +1,11 @@
+require("dotenv").config();
 const mysql = require("mysql2");
 
 const pool = mysql.createPool({
   host: "localhost",
-  port: 3307, // Detta är din Docker-port
+  port: 3307,
   user: "root",
-  password: "my-secret-pw",
+  password: process.env.MYSQL_ROOT_PASSWORD,
   database: "haus_of_cards",
   waitForConnections: true,
   connectionLimit: 10,
