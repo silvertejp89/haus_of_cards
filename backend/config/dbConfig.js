@@ -13,3 +13,4 @@ const pool = mysql.createPool({
 });
 
 module.exports = pool.promise();
+console.log("MySQL Root Password:", process.env.MYSQL_ROOT_PASSWORD);
